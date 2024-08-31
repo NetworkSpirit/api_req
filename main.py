@@ -12,7 +12,7 @@ def get_sub_id(token):
     sub_id = response_sub['info']['sub_id']
     return sub_id
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST'])
 def hello():
     return jsonify("hi")  # Return the sub_id in JSON format
 
