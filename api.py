@@ -15,7 +15,7 @@ def get_sub_id(token):
     sub_id = response_sub['info']['sub_id']
     return sub_id
 
-@app.route('/getsub', methods=['GET'])
+@app.route('/getsub', methods=['POST'])
 def getsub():
     global lead
     data = request.get_json()  # Get the JSON data from the request
