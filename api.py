@@ -1,5 +1,9 @@
 from flask import Flask, request, jsonify
 import requests
+import os
+
+port = int(os.environ.get('PORT', 5000))
+
 
 lead = None
 app = Flask(__name__)
@@ -56,6 +60,6 @@ if __name__ == '__main__':
 
 from myproject import app
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=port)
 
 
