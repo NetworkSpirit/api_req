@@ -53,7 +53,7 @@ def create_lead_item():
     _utm_campaign_ = data.get('utm_campaign')
     _utm_content_ = data.get('utm_content')
     _subhype_ = data.get('subhype')
-    _click_id_ = get_sub_id(data.get('token')
+    _click_id_ = get_sub_id(data.get('token'))
     return jsonify(info_item(_name_, _phone_, _offer_id_, _utm_campaign_, _utm_content_, _click_id_, _subhype_))
 if __name__ == '__main__':
     app.run()
